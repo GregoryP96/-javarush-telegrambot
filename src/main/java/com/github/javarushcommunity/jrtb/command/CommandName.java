@@ -5,6 +5,8 @@ public enum CommandName {
     START("/start"),
     STOP("/stop"),
     STAT("/stat"),
+    ADD_GROUP_SUB("/addgroupsub"),
+    LIST_GROUP_SUB("/listgroupsub"),
     HELP("/help"),
     NO("/no");
 
