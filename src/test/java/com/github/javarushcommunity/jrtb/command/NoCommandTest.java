@@ -1,6 +1,5 @@
 package com.github.javarushcommunity.jrtb.command;
 
-
 import org.junit.jupiter.api.DisplayName;
 
 import static com.github.javarushcommunity.jrtb.command.CommandName.NO;
@@ -23,5 +22,4 @@ public class NoCommandTest extends AbstractCommandTest {
     Command getCommand() {
         return new NoCommand(sendBotMessageService);
     }
-
 }

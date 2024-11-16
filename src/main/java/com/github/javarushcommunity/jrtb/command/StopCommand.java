@@ -1,9 +1,10 @@
 package com.github.javarushcommunity.jrtb.command;
 
-import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
 import com.github.javarushcommunity.jrtb.repository.entity.TelegramUser;
+import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
 import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import org.telegram.telegrambots.meta.api.objects.Update;
+
 import java.util.Optional;
 
 import static com.github.javarushcommunity.jrtb.command.CommandUtils.getChatId;
@@ -11,13 +12,13 @@ import static com.github.javarushcommunity.jrtb.command.CommandUtils.getChatId;
 /**
  * Stop {@link Command}.
  */
-
 public class StopCommand implements Command {
 
     private final SendBotMessageService sendBotMessageService;
     private final TelegramUserService telegramUserService;
 
-    public static final String STOP_MESSAGE = "Деактивировал все ваши подписки \uD83D\uDE1F.";
+    public static final String STOP_MESSAGE = "Деактивировал все твои подписки \uD83D\uDE1F.\n" +
+            "Ты всегда можешь вернуться нажав /start";
 
     public StopCommand(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService) {
         this.sendBotMessageService = sendBotMessageService;
