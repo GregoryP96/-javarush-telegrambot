@@ -8,9 +8,9 @@ import static com.github.javarushcommunity.jrtb.command.CommandUtils.getChatId;
 /**
  * Unknown {@link Command}.
  */
-
 public class UnknownCommand implements Command {
-    public static final String UNKNOWN_MESSAGE = "Не понимаю вас \uD83D\uDE1F, напишите /help чтобы узнать, что я понимаю!";
+
+    public static final String UNKNOWN_MESSAGE = "Не понимаю тебя \uD83D\uDE1F, напиши /help чтобы узнать что я понимаю.";
 
     private final SendBotMessageService sendBotMessageService;
 
